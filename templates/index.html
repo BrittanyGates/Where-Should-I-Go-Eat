@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Determine where should you go eat with a click of a button." />
+  <title>Home | Where Should I Go Eat?</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/static/css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KMPSYC7DRY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KMPSYC7DRY');
+  </script>
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="container site-container">
+        <h1 class="title">Where Should I Go Eat?</h1>
+        <p class="description">Undecided where should you go eat? Press the button below to find out!</p>
+        <div class="container restaurant-btn-container">
+          <div class="row">
+            <div class="col">
+              <form action="/" method="POST">
+                <button class="btn btn-lg choice-btn" name="restaurant" type="submit" onclick="{{ restaurant }}">Chain
+                  Restaurant</button>
+              </form>
+            </div>
+            <div class="col">
+              <button class="btn btn-lg choice-btn" name="google-maps" type="submit"
+                onclick=window.open("https://www.google.com/maps/search/?api=1&query=restaurants");>Local
+                Restaurant</button>
+              <p class="google-maps-option">On Google Maps</p>
+            </div>
+            <div class="col">
+              <button class="btn btn-lg choice-btn" name="start-over" type="submit"
+                onclick="location.href=location.href">Reset</button>
+            </div>
+          </div>
+          <div class="container restaurant-result-container">
+            <p class="restaurant-result">You should go eat at <span class="restaurant-result-color">{{ restaurant
+                }}</span></p>
+            <p class="restaurant-link-text">Order <a class="restaurant-link" href="{{ restaurant_link }}"
+                target="_blank">{{
+                restaurant }}</a> online for pickup or delivery
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="col contact-info-col">
+      <p>Created by <a href="https://bcgates.com" title="My website" target="_blank">Brittany Gates</a> | <a
+          href="https://github.com/brittbot-bgates" title="My GitHub account" target="_blank"><i
+            class="bi bi-github"></i></a></p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+/* GLOBAL STYLES */
+body {
+  background-image: url(/static/img/bg_img.jpg);
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.site-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 0.5rem;
+  margin-top: 15vh;
+  padding-top: 2rem;
+}
+
+.title {
+  font-size: 3.75rem;
+  
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.restaurant-btn-container {
+  margin-top: 10vh;
+}
+
+.choice-btn {
+  margin: auto;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 0;
+  background-color: #ffd400;
+  color: #000;
+  font-weight: 500;
+}
+
+.choice-btn:hover {
+  background-color: #ffee32;
+  color: #000;
+  border: 0;
+}
+
+.google-maps-option {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.restaurant-result-container {
+  margin-top: 5vh;
+  padding-bottom: 2rem;
+}
+
+.restaurant-result {
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #FFF;
+}
+
+.restaurant-result-color {
+  font-size: 2.5rem;
+  color: #9ef01a;
+}
+
+.restaurant-link-text {
+  margin-top: 0.5rem;  
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #FFF;
+}
+
+.restaurant-link {
+  text-decoration: none;
+  color: #9ef01a;
+}
+
+.restaurant-link:hover {
+  color: #ffee32;
+}
+
+.contact-info-col {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  color: #FFF;
+}
+
+.contact-info-col a {
+  color: #ffd400;
+  text-decoration: none;
+}
+
+.contact-info-col a:hover {
+  color: #ffee32;
+  text-decoration: none;
+}
+
+/* MOBILE DEVICE STYLES */
+/* PHONES */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* TABLETS */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+/* SMALL LAPTOPS SCREENS */
+@media only screen and (min-width: 1023px) and (max-width: 1439px) {
+  
+}
+
+/* MEDIUM LAPTOP SCREENS */
+@media only screen and (min-width: 1440px) and (max-width: 1680px) {
+
+}
