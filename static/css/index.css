@@ -107,17 +107,99 @@ body {
 /* MOBILE DEVICE STYLES */
 /* PHONES */
 @media only screen and (max-width: 600px) {
+  .site-container {
+    margin-top: 5vh;
+    padding-top: 1rem;
+  }
   
+  .title {
+    font-size: 2rem;
+    
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .restaurant-btn-container {
+    margin-top: 5vh;
+  }
+
+  .choice-btn {
+    font-size: 1rem;
+  }
+  
+  .google-maps-option {
+    font-size: 0.75rem;
+  }
+  
+  .restaurant-result {
+    font-size: 2rem;
+  }
+  
+  .restaurant-result-color {
+    font-size: 1.5rem;
+  }
+  
+  .restaurant-link-text {
+    font-size: 1.5rem;
+  }
 }
 
 /* TABLETS */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-container {
+    margin-top: 5vh;
+    padding-top: 1rem;
+  }
   
+  .title {
+    font-size: 2.75rem;    
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .restaurant-result {
+    font-size: 2rem;
+  }
+  
+  .restaurant-result-color {
+    font-size: 2rem;
+  }
+  
+  .restaurant-link-text {
+    font-size: 2rem;
+  }
 }
 
 /* SMALL LAPTOPS SCREENS */
 @media only screen and (min-width: 1023px) and (max-width: 1439px) {
+  .site-container {
+    margin-top: 10vh;
+    padding-top: 1.5rem;
+  }
   
+  .title {
+    font-size: 3rem;    
+  }
+  
+  .description {
+    font-size: 1.25rem;
+  }
+
+  .restaurant-result {
+    font-size: 2.25rem;
+  }
+  
+  .restaurant-result-color {
+    font-size: 2.25rem;
+  }
+  
+  .restaurant-link-text {
+    font-size: 2.25rem;
+  }  
 }
 
 /* MEDIUM LAPTOP SCREENS */
