@@ -1,47 +1,65 @@
 /* GLOBAL STYLES */
 body {
-  background-image: url(/static/img/bg_img.jpg);
+  background-image: url("../img/background.jpg");
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
 }
 
-.site-container {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: 0.5rem;
-  margin-top: 15vh;
-  padding-top: 2rem;
-}
-
-.title {
-  font-size: 3.75rem;
-  
-}
-
-.description {
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-.restaurant-btn-container {
-  margin-top: 10vh;
-}
-
-.choice-btn {
+button {
+  font-weight: 600;
   margin: auto;
   display: block;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  border: 0;
-  background-color: #ffd400;
-  color: #000;
-  font-weight: 500;
+  border: 0px;
 }
 
-.choice-btn:hover {
-  background-color: #ffee32;
-  color: #000;
-  border: 0;
+a {
+  text-decoration: none;
+  color: #F9DC5C;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* TITLE CONTAINER */
+.title-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.title {
+  font-size: 3.75rem;
+  font-weight: 600;
+  margin-top: 3.25rem;
+  padding: 8px 0px 0px 0px;
+}
+
+.subtitle {
+  margin-bottom: 3rem;
+  padding: 0px 0px 8px 0px;
+}
+
+/* RESTAURANT CONTAINER */
+.restaurant-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 10rem;
+  padding: 10px 50px;
+}
+
+.button {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.button:hover {
+  background-color: #53F4FF;
+  color: #011936;
 }
 
 .google-maps-option {
@@ -49,160 +67,140 @@ body {
   font-size: 1rem;
 }
 
-.restaurant-result-container {
-  margin-top: 5vh;
-  padding-bottom: 2rem;
-}
-
 .restaurant-result {
+  border: 0.3rem solid #FFF;
   padding: 0.25rem;
   text-align: center;
+  font-weight: 700;
   font-size: 2.5rem;
-  color: #FFF;
-}
-
-.restaurant-result-color {
-  font-size: 2.5rem;
-  color: #9ef01a;
-}
-
-.restaurant-link-text {
-  margin-top: 0.5rem;  
-  padding: 0.25rem;
-  text-align: center;
-  font-size: 2rem;
-  color: #FFF;
+  color: #53F4FF;
 }
 
 .restaurant-link {
-  text-decoration: none;
-  color: #9ef01a;
-}
-
-.restaurant-link:hover {
-  color: #ffee32;
-}
-
-.contact-info-col {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  padding-top: 0.25rem;
-  width: 100%;
-  font-size: 1rem;
+  margin-top: 0.5rem;  
+  padding: 0.25rem;
   text-align: center;
-  color: #FFF;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #53F4FF;
 }
 
-.contact-info-col a {
-  color: #ffd400;
-  text-decoration: none;
+/* ABOUT CONTAINER*/
+.about-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 25%;  
+  bottom: 0;
+  width: 50%;
+  padding: 8px 0px;  
 }
 
-.contact-info-col a:hover {
-  color: #ffee32;
-  text-decoration: none;
+.my-info {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* MOBILE DEVICE STYLES */
-/* PHONES */
+
+/* SMALL PHONES */
 @media only screen and (max-width: 600px) {
-  .site-container {
-    margin-top: 5vh;
-    padding-top: 1rem;
-  }
-  
   .title {
     font-size: 2rem;
-    
+    margin-top: 1rem;
   }
   
-  .description {
-    font-size: 1rem;
-  }
-  
-  .restaurant-btn-container {
-    margin-top: 5vh;
+  .subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
   }
 
-  .choice-btn {
-    font-size: 1rem;
+  .restaurant-container {
+    margin-top: 5rem;
+    padding: 10px 20px;
   }
   
+  .button {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
   .google-maps-option {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
-  
+
   .restaurant-result {
-    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 0.25rem;
+    font-size: 1.75rem;
   }
   
-  .restaurant-result-color {
+  .restaurant-link {
+    margin-top: 0.25rem;  
+    padding: 0.25rem;
     font-size: 1.5rem;
   }
-  
-  .restaurant-link-text {
-    font-size: 1.5rem;
+
+  .about-container {
+    left: 0;  
+    bottom: 0;
+    width: 100%;
+    padding: 2px 10px;
   }
 }
 
 /* TABLETS */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .site-container {
-    margin-top: 5vh;
-    padding-top: 1rem;
-  }
-  
+@media only screen and (min-width: 768px) {
   .title {
-    font-size: 2.75rem;    
+    font-size: 2.5rem;
+    margin-top: 1rem;
   }
   
-  .description {
-    font-size: 1rem;
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
-  
-  .restaurant-result {
-    font-size: 2rem;
-  }
-  
-  .restaurant-result-color {
-    font-size: 2rem;
-  }
-  
-  .restaurant-link-text {
-    font-size: 2rem;
-  }
-}
 
-/* SMALL LAPTOPS SCREENS */
-@media only screen and (min-width: 1023px) and (max-width: 1439px) {
-  .site-container {
-    margin-top: 10vh;
-    padding-top: 1.5rem;
+  .restaurant-container {
+    margin-top: 6rem;
+    padding: 10px 20px;
   }
   
-  .title {
-    font-size: 3rem;    
-  }
-  
-  .description {
-    font-size: 1.25rem;
+  .button {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
   }
 
   .restaurant-result {
-    font-size: 2.25rem;
+    margin-top: 1rem;
+    padding: 0.25rem;
+    font-size: 2rem;
   }
   
-  .restaurant-result-color {
-    font-size: 2.25rem;
+  .restaurant-link {
+    margin-top: 0.25rem;  
+    padding: 0.25rem;
+    font-size: 1.75rem;
   }
-  
-  .restaurant-link-text {
-    font-size: 2.25rem;
-  }  
+
+  .about-container {
+    left: 0;  
+    bottom: 0;
+    width: 100%;
+    padding: 2px 10px;
+  }
 }
 
-/* MEDIUM LAPTOP SCREENS */
-@media only screen and (min-width: 1440px) and (max-width: 1680px) {
+/* LAPTOPS */
+@media only screen and (min-width: 1024px) {
+  .title {
+    font-size: 2.75rem;
+    margin-top: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
 
 }
