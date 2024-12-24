@@ -1,4 +1,4 @@
-runtime: python311 # or another supported version
+runtime: python310 # or another supported version
 
 instance_class: F1
 
