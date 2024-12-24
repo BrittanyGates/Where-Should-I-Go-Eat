@@ -49,4 +49,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Acknowledgments
 
-* [Dominique Pizzie](https://gist.github.com/DomPizzie) for the simple README template
+* [Dominique Pizzie](https://gist.github.com/DomPizzie) for the simple README template.
