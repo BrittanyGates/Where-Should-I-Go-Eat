@@ -23,7 +23,7 @@ A modern web browser (like Google Chrome) with JavaScript enabled.
 ## Help
 
 Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Where-Should-I-Go-Eat/issues) tab on the
-  repo.
+repo.
 
 ## Author
 
@@ -37,7 +37,9 @@ Brittany Gates
 
 ## Version History
 
-* Latest release notes as of late December 2024.
+* Latest release notes as of January 2025:
+    * Updated the footer on all pages to display all my social media links.
+* Latest release notes as of late December 2024:
     * Refactored the program to use nested tuples instead of a SQLite database.
     * Improved the README.
     * Fixed typos and comment formatting.
