@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Where Should I Go Eat?
-Creator: Brittany Gates (https://github.com/brittbot-bgates) | (https://www.linkedin.com/in/brittanycgates) |
+Creator: Brittany Gates (https://github.com/BrittanyGates) | (https://www.linkedin.com/in/brittanycgates) |
 (https://brittbot.com/)
 About: If you're hungry and unsure of where to go to get something to eat, this app randomly tells you where to go
 eat with a click of a button.
