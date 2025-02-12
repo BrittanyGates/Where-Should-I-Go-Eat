@@ -4,15 +4,13 @@
 
 Hungry? Don't know where to go to eat? This website tells you at the click of a button.
 
-## Description
+## About The Program
 
 This web applications uses the Bootstrap on the Front-End and Python/Flask on the Back-End to display either a
 randomly-chosen chain restaurant and its URL for visitors to order food online, or a link to open Google Maps for a
 visitor to choose a local restaurant.
 
-## Getting Started
-
-### Dependencies
+## Dependencies
 
 A modern web browser (like Google Chrome) with JavaScript enabled.
 
@@ -25,7 +23,7 @@ A modern web browser (like Google Chrome) with JavaScript enabled.
 Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Where-Should-I-Go-Eat/issues) tab on the
 repo.
 
-## Author
+## Creator
 
 Brittany Gates
 
@@ -37,6 +35,8 @@ Brittany Gates
 
 ## Version History
 
+* Latest release notes as of February 2025:
+    * Updated the README.
 * Latest release notes as of January 2025:
     * Updated the footer on all pages to display all my social media links.
 * Latest release notes as of late December 2024:
