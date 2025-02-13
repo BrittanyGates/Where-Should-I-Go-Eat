@@ -10,7 +10,7 @@ This web applications uses the Bootstrap on the Front-End and Python/Flask on th
 randomly-chosen chain restaurant and its URL for visitors to order food online, or a link to open Google Maps for a
 visitor to choose a local restaurant.
 
-## Dependencies
+## Program Dependencies
 
 A modern web browser (like Google Chrome) with JavaScript enabled.
 
@@ -18,20 +18,9 @@ A modern web browser (like Google Chrome) with JavaScript enabled.
 
 [whereshouldigoeat.com](https://www.whereshouldigoeat.com/)
 
-## Help
+## Found A Bug? Need Help?
 
-Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Where-Should-I-Go-Eat/issues) tab on the
-repo.
-
-## Creator
-
-Brittany Gates
-
-* [Website](https://brittbot.com)
-* [Email](mailto:support@brittbot.com)
-* [LinkedIn](https://www.linkedin.com/in/brittanycgates/)
-* [Twitter / X](https://x.com/brittany__gates)
-* [YouTube](https://www.youtube.com/c/BrittanyGates)
+Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Where-Should-I-Go-Eat/issues) tab on the repo.
 
 ## Version History
 
@@ -53,4 +42,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Acknowledgments
 
-[Dominique Pizzie](https://gist.github.com/DomPizzie) for the simple README template
+[Dominique Pizzie](https://gist.github.com/DomPizzie) for the simple README template.
