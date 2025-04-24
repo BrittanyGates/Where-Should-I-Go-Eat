@@ -6,7 +6,7 @@ About: If you're hungry and unsure of where to go to get something to eat, this 
 eat with a click of a button.
 """
 
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify, Response
 from static.files.restaurants_urls import restaurant_urls
 import random
 
@@ -19,6 +19,15 @@ def index() -> render_template:
     :return: Home page displaying the randomly-chosen restaurant.
     """
     return render_template("index.html")
+
+
+@app.route("/restaurant_result")
+def get_restaurant_route() -> Response:
+    """Allows the JavaScript event handler to run the main function.
+    :return: The random restaurant inside a dictionary.
+    """
+    restaurant = main()
+    return jsonify({"restaurant": restaurant})
 
 
 @app.route("/", methods=["GET", "POST"])

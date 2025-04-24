@@ -24,6 +24,9 @@ Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Wh
 
 ## Version History
 
+* Latest release notes as of April 2025:
+    * Removed the inline onclick event handler from index.html.
+    * Created index.js to contain the event handlers.
 * Latest release notes as of February 2025:
     * Updated the README.
 * Latest release notes as of January 2025:
