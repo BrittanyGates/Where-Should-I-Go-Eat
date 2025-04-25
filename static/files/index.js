@@ -1,13 +1,12 @@
-const chainRestaurant = document.querySelector("#chainRestaurantButton");
+const chainRestaurantButton = document.querySelector("#chainRestaurantButton");
 const localRestaurantButton = document.querySelector("#localRestaurantButton");
 const resetButton = document.querySelector("#resetButton");
 
-chainRestaurant.addEventListener("click", () => {
+chainRestaurantButton.addEventListener("click", () => {
     fetch("/")
     .then(response => {
-        return response.json()
-    })
-
+        return response.json();
+    });
 });
 
 localRestaurantButton.addEventListener("click", () => {
