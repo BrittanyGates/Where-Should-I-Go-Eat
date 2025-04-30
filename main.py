@@ -36,13 +36,13 @@ def main() -> render_template:
     :return: The name and URL of the randomly-chosen restaurant.
     """
     with open("static/files/restaurants.txt", "r") as restaurants:
-        restaurant_list: [str] = restaurants.readlines()
+        restaurant_list: list[str] = restaurants.readlines()
 
     # Choose a random restaurant
-    random_restaurant: [str] = random.choice(restaurant_list)
+    random_restaurant: str = random.choice(restaurant_list)
 
     # Strip the newline character from the end so the search is successful
-    random_restaurant: [str] = random_restaurant.strip()
+    random_restaurant: str = random_restaurant.strip()
 
     # Initializing variable
     found_restaurant_url: str = ""
