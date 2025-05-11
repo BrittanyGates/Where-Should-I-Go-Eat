@@ -1,6 +1,6 @@
 # Where Should I Go Eat?
 
-![A fast food restaurant on a sunny afternoon with vehicles parked in the parking lot attached to the restaurant. Above the restaurant is a sign with the phrase: Where Should I Go Eat](static/img/where_should_I_go_eat_gemini_generated.jpeg)
+![A fast food restaurant on a sunny afternoon with vehicles parked in the parking lot attached to the restaurant. Above the restaurant is a sign with the phrase: Where Should I Go Eat](static/images/where_should_I_go_eat_gemini_generated.jpeg)
 
 Hungry? Don't know where to go to eat? This website tells you at the click of a button.
 
@@ -20,24 +20,28 @@ A modern web browser (like Google Chrome) with JavaScript enabled.
 
 ## Found A Bug? Need Help?
 
-Please file a new issue using the [Issues](https://github.com/brittbot-bgates/Where-Should-I-Go-Eat/issues) tab on the repo.
+Please file a new issue using the Issues tab on the repo.
 
 ## Version History
 
+* Latest release notes as of May 2025:
+    - Replaced some CSS rules with various Bootstrap ultilities.
+    - Created a base template.
+    - Changed the background image.
 * Latest release notes as of April 2025:
-    * Removed the inline onclick event handler from index.html.
-    * Created index.js to contain the event handlers.
+    - Removed the inline onclick event handler from index.html.
+    - Created index.js to contain the event handlers.
 * Latest release notes as of February 2025:
-    * Updated the README.
+    - Updated the README.
 * Latest release notes as of January 2025:
-    * Updated the footer on all pages to display all my social media links.
+    - Updated the footer on all pages to display all my social media links.
 * Latest release notes as of late December 2024:
-    * Refactored the program to use nested tuples instead of a SQLite database.
-    * Improved the README.
-    * Fixed typos and comment formatting.
-    * Completed the CSS rules for desktop and mobile devices.
-    * Updated the social media links in the index.html footer.
-    * Removed unnecessary files from the repo.
+    - Refactored the program to use nested tuples instead of a SQLite database.
+    - Improved the README.
+    - Fixed typos and comment formatting.
+    - Completed the CSS rules for desktop and mobile devices.
+    - Updated the social media links in the index.html footer.
+    - Removed unnecessary files from the repo.
 
 ## License
 
