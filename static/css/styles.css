@@ -1,0 +1,167 @@
+/* GLOBAL STYLES */
+body {
+  background-image: url("../images/may_background.jpg");
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  color: #FFF;
+  font-family: "Montserrat", sans-serif;
+}
+
+.title-container {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.restaurant-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 10rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #ffd60a;
+}
+
+.btn:hover {
+  border: none;
+  background-color: #ffc300;
+}
+
+.restaurant-result {
+  border: 0.3rem solid #FFF;
+  border-radius: 0.5rem;
+  color: #ffd60a;
+}
+
+a {
+  text-decoration: none;
+  color: #64d2ff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffd60a;
+}
+
+.contact-info-col {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #FFF;
+}
+
+/* MOBILE DEVICE STYLES */
+
+/* SMALL PHONES */
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 1.75rem !important;
+  }
+
+  .subtitle {
+    font-size: 1rem !important;
+  }
+
+  .restaurant-container {
+    margin-top: 5rem;
+  }
+
+  .btn {
+    font-size: 0.75rem !important;
+  }
+
+  .google-maps-option {
+    font-size: 0.8rem;
+  }
+
+  .restaurant-result {
+    padding: 0.25rem;
+    font-size: 1.25rem !important;
+  }
+
+  .restaurant-link {
+    margin-top: 0.25rem;
+    padding: 0.25rem;
+    font-size: 1.25rem !important;
+  }
+}
+
+@media screen and (max-height: 425px) and (orientation: landscape) {
+  body {
+    background-position: 50% 65%;
+  }
+
+  .title {
+    font-size: 1.75rem !important;
+  }
+
+  .subtitle {
+    font-size: 1rem !important;
+  }
+
+  .restaurant-container {
+    margin-top: 2rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0 !important;
+  }
+
+  .btn {
+    font-size: 0.75rem !important;
+  }
+
+  .google-maps-option {
+    font-size: 0.8rem;
+  }
+
+  .restaurant-result {
+    padding: 0.25rem;
+    font-size: 1.25rem !important;
+  }
+
+  .restaurant-link {
+    margin-top: 0.25rem;
+    padding: 0.25rem;
+    font-size: 1.25rem !important;
+  }
+}
+
+/* TABLETS */
+@media screen and (max-width: 768px) {
+  .subtitle {
+    font-size: 1.25rem !important;
+  }
+
+  .restaurant-container {
+    margin-top: 6rem;
+  }
+
+  .google-maps-option {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-height: 768px) and (orientation: landscape) {
+  .subtitle {
+    font-size: 1.25rem !important;
+  }
+
+  .restaurant-container {
+    margin-top: 6rem;
+  }
+
+  .google-maps-option {
+    font-size: 0.9rem;
+  }
+}
+
+/* LAPTOPS */
+@media screen and (max-width: 1024px) {
+  .restaurant-container {
+    margin-top: 3rem;
+  }
+}
