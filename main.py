@@ -21,28 +21,15 @@ def index() -> render_template:
     return render_template("index.html")
 
 
-@app.route("/restaurant_result")
-def get_restaurant_route() -> Response:
-    """Allows the JavaScript event handler to run the main function.
-    :return: The random restaurant inside a dictionary.
-    """
-    restaurant = main()
-    return jsonify({"restaurant": restaurant})
-
-
-@app.route("/", methods=["GET", "POST"])
-def main() -> render_template:
-    """Gathers the random restaurant to display on the index.html template.
-    :return: The name and URL of the randomly-chosen restaurant.
+def get_random_restaurant() -> tuple:
+    """Gets a random restaurant from a text file.
+    :return: The random restaurant and its restaurant URL as a string in a tuple.
     """
     with open("static/files/restaurants.txt", "r") as restaurants:
         restaurant_list: list[str] = restaurants.readlines()
 
     # Choose a random restaurant
-    random_restaurant: str = random.choice(restaurant_list)
-
-    # Strip the newline character from the end so the search is successful
-    random_restaurant: str = random_restaurant.strip()
+    random_restaurant: str = random.choice(restaurant_list).strip()
 
     # Initializing variable
     found_restaurant_url: str = ""
@@ -52,7 +39,25 @@ def main() -> render_template:
         if random_restaurant in restaurant:
             found_restaurant_url: str = restaurant[1]
 
-    return render_template("index.html", restaurant=random_restaurant, restaurant_link=found_restaurant_url)
+    return random_restaurant, found_restaurant_url
+
+
+@app.route("/restaurant-result")
+def get_restaurant() -> Response:
+    """Allows the JavaScript event handler to run the main function.
+    :return: The random restaurant inside a dictionary.
+    """
+    restaurant, restaurant_link = get_random_restaurant()
+    return jsonify({"restaurant": restaurant, "link": restaurant_link})
+
+
+@app.route("/", methods=["GET", "POST"])
+def main() -> render_template:
+    """Gathers the random restaurant to display on the index.html template.
+    :return: The name and URL of the randomly-chosen restaurant.
+    """
+
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
