@@ -28,6 +28,9 @@ Please file a new issue using the Issues tab on the repo.
     - Replaced some CSS rules with various Bootstrap ultilities.
     - Created a base template.
     - Changed the background image.
+    - Moved the logic in the main.py file to find the random restaurant and its URL into a new function.
+    - Added a new Event Listerned to the main.js file to disable the "Chain Restaurant" button after the user clicks it once.
+    - Added additional screen sizes of the mobile media queries.
 * Latest release notes as of April 2025:
     - Removed the inline onclick event handler from index.html.
     - Created index.js to contain the event handlers.
