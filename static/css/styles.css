@@ -58,17 +58,58 @@ a:hover {
 /* MOBILE DEVICE STYLES */
 
 /* SMALL PHONES */
-@media screen and (max-width: 425px) {
+/* GLOBAL STYLES */
+@media screen and (min-width: 320px) and (max-width: 424px) {
   .title {
-    font-size: 1.75rem !important;
+    font-size: 1.25rem !important;
   }
 
   .subtitle {
-    font-size: 1rem !important;
+    font-size: 0.8rem !important;
   }
 
   .restaurant-container {
-    margin-top: 5rem;
+    margin-top: 2.5rem !important;
+  }
+
+  .btn {
+    font-size: 0.7rem !important;
+  }
+
+  .google-maps-option {
+    margin-bottom: 0.5rem !important;
+    font-size: 0.5rem !important;
+  }
+
+  .restaurant-result {
+    margin-top: 1.5rem !important;
+    padding: 0.4rem !important;
+    font-size: 1rem !important;
+  }
+
+  .restaurant-link {
+    margin-top: 0.25rem !important;
+    padding: 0.25rem !important;
+    font-size: 1rem !important;
+  }
+
+  .contact-info-col {
+    font-size: 0.75rem !important;
+  }
+}
+
+/* START HERE TOMORROW */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .title {
+    font-size: 1.25rem !important;
+  }
+
+  .subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .restaurant-container {
+    margin-top: 3rem !important;
   }
 
   .btn {
@@ -76,22 +117,71 @@ a:hover {
   }
 
   .google-maps-option {
-    font-size: 0.8rem;
+    font-size: 0.6rem !important;
   }
 
   .restaurant-result {
-    padding: 0.25rem;
+    padding: 0.25rem !important;
+    font-size: 1.2rem !important;
+  }
+
+  .restaurant-link {
+    margin-top: 0.25rem !important;
+    padding: 0.25rem !important;
+    font-size: 1.2rem !important;
+  }
+
+  .contact-info-col {
+    font-size: 0.75rem !important;
+  }
+}
+
+/* SMALL PHONES */
+/* LANDSCAPE ORIENTATION */
+@media screen and (min-height: 320px) and (max-height: 424px) and (orientation: landscape) {
+  body {
+    background-position: 50% 70%;
+  }
+
+  .title {
+    font-size: 1.5rem !important;
+  }
+
+  .subtitle {
+    font-size: 0.9rem !important;
+  }
+
+  .restaurant-container {
+    margin-top: 2rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0 !important;
+  }
+
+  .btn {
+    font-size: 0.75rem !important;
+  }
+
+  .google-maps-option {
+    font-size: 0.8rem !important;
+  }
+
+  .restaurant-result {
+    padding: 0.25rem !important;
     font-size: 1.25rem !important;
   }
 
   .restaurant-link {
-    margin-top: 0.25rem;
-    padding: 0.25rem;
+    margin-top: 0 !important;
+    padding: 0 !important;
     font-size: 1.25rem !important;
+  }
+
+  .contact-info-col {
+    display: none;
   }
 }
 
-@media screen and (max-height: 425px) and (orientation: landscape) {
+@media screen and (min-height: 425px) and (max-height: 767px) and (orientation: landscape) {
   body {
     background-position: 50% 65%;
   }
@@ -115,53 +205,59 @@ a:hover {
   }
 
   .google-maps-option {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
   }
 
   .restaurant-result {
-    padding: 0.25rem;
+    margin-top: 1rem !important;
+    padding: 0.25rem !important;
     font-size: 1.25rem !important;
   }
 
   .restaurant-link {
-    margin-top: 0.25rem;
-    padding: 0.25rem;
+    margin-top: 0 !important;
+    padding: 0rem !important;
     font-size: 1.25rem !important;
+  }
+
+  .contact-info-col {
+    display: none;
   }
 }
 
 /* TABLETS */
-@media screen and (max-width: 768px) {
+/* GLOBAL STYLES */
+@media screen and (min-width: 768px) and (max-width: 825px),
+screen and (min-height: 768px) and (max-height: 825px) and (orientation: landscape) {
+  .title {
+    font-size: 2rem !important;
+  }
+
   .subtitle {
-    font-size: 1.25rem !important;
+    font-size: 1rem !important;
   }
 
   .restaurant-container {
-    margin-top: 6rem;
+    margin-top: 5rem !important;
   }
 
   .google-maps-option {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
 }
 
-@media screen and (max-height: 768px) and (orientation: landscape) {
-  .subtitle {
-    font-size: 1.25rem !important;
-  }
-
-  .restaurant-container {
-    margin-top: 6rem;
-  }
-
-  .google-maps-option {
-    font-size: 0.9rem;
-  }
-}
-
-/* LAPTOPS */
-@media screen and (max-width: 1024px) {
+/* SMALL LAPTOPS */
+/* GLOBAL STYLES */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .restaurant-container {
     margin-top: 3rem;
+  }
+}
+
+/* LARGE LAPTOPS */
+/* GLOBAL STYLES */
+@media screen and (max-width: 1440px) {
+  .restaurant-container {
+    margin-top: 4rem;
   }
 }
