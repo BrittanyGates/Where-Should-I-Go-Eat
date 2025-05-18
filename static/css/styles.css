@@ -33,6 +33,14 @@ body {
   color: #ffd60a;
 }
 
+.restaurant-link {
+  display: none;
+}
+
+.restaurant-link.is-visible {
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: #64d2ff;
