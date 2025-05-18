@@ -10,24 +10,29 @@
     <div class="row">
         <div class="col d-flex justify-content-center">
             <form action="/" method="POST">
-                <button id="chainRestaurantButton" class="btn btn-light fw-semibold" name="restaurant" type="submit">Chain
+                <button id="chainRestaurantButton" class="btn btn-light fw-semibold" name="restaurant"
+                    type="submit">Chain
                     Restaurant
                 </button>
             </form>
         </div>
         <div class="col d-flex flex-column justify-content-center">
-            <button id="localRestaurantButton" class="m-auto btn btn-light fw-semibold" name="google maps" type="submit">Local
+            <button id="localRestaurantButton" class="m-auto btn btn-light fw-semibold" name="google maps"
+                type="submit">Local
                 Restaurant
             </button>
             <p class="m-auto pt-1 google-maps-option text-center">Choose from Google Maps</p>
         </div>
         <div class="col d-flex flex-column justify-content-center align-self-start">
-            <button id="resetButton" class="m-auto btn btn-light fw-semibold" name="start-over" type="submit">Reset</button>
+            <button id="resetButton" class="m-auto btn btn-light fw-semibold" name="start-over"
+                type="submit">Reset</button>
         </div>
-        <p class="mt-3 py-3 fs-3 fw-medium text-center restaurant-result">You Should
-            Go Eat At {{ restaurant }}</p>
-        <p class="mt-1 p-1 fs-3 fw-medium text-center restaurant-link">Order Online At {{ restaurant }} <a href="{{ restaurant_link }}"
-                target="_blank">here</a></p>
+        <p class="mt-3 py-3 fs-3 fw-medium text-center restaurant-result">{% if restaurant %}You Should
+            Go Eat At {{ restaurant }}{% endif %}</p>
+
+        <p class="mt-1 p-1 fs-3 fw-medium text-center restaurant-link">{% if restaurant %}Order Online At {{ restaurant
+            }} <a href="{{ restaurant_link }}" target="_blank">here{% endif %}</a></p>
+
     </div>
 </div>
 {% endblock %}
