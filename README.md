@@ -31,6 +31,9 @@ Please file a new issue using the Issues tab on the repo.
     - Moved the logic in the main.py file to find the random restaurant and its URL into a new function.
     - Added a new Event Listerned to the main.js file to disable the "Chain Restaurant" button after the user clicks it once.
     - Added additional screen sizes of the mobile media queries.
+    - Added `if` statements to the Jinja index.html template.
+    - Added a JavaScript function to display the results on the website after the visitor clicks the Chain Restaurant button.
+        - Before this change when the page loaded the website displayed `You Should Go Eat At` and `Order Online At here`.
 * Latest release notes as of April 2025:
     - Removed the inline onclick event handler from index.html.
     - Created index.js to contain the event handlers.
